@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.56158954, g: 0.7218089, b: 0.817857, a: 1}
+  m_IndirectSpecularColor: {r: 0.56158954, g: 0.72180885, b: 0.817857, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -223,6 +223,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -477,6 +481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -556,6 +564,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (07)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -865,7 +877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15
+      value: -14.94
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1020,6 +1032,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -1237,6 +1253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1391,6 +1411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1470,6 +1494,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -1625,6 +1653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1778,6 +1810,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -1970,6 +2006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2154,6 +2194,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -2445,6 +2489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2525,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2604,6 +2656,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -2752,6 +2808,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -2943,6 +3003,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -3172,6 +3236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3251,6 +3319,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -3474,6 +3546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3554,6 +3630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3633,6 +3713,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -3961,6 +4045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4114,6 +4202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -4343,6 +4435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4422,6 +4518,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -4503,6 +4603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4583,6 +4687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4662,6 +4770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -4779,6 +4891,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -5070,6 +5186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5086,6 +5206,127 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1281872959}
   m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+--- !u!1001 &541549580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1022245406}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.74
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000081460335
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 3.560745e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Name
+      value: Traffic cone 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 541549583}
+  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+--- !u!4 &541549581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 541549580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &541549582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 541549580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &541549583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541549582}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &542203764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5149,6 +5390,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -5229,6 +5474,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -5520,6 +5769,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 936907361}
+  - {fileID: 1932378842}
+  - {fileID: 1123115340}
   - {fileID: 1598227014}
   - {fileID: 878076707}
   - {fileID: 1719535645}
@@ -5577,7 +5828,6 @@ Transform:
   - {fileID: 315190553}
   - {fileID: 2131016455}
   - {fileID: 952765358}
-  - {fileID: 1890921097}
   - {fileID: 187486616}
   - {fileID: 617826573}
   - {fileID: 702842402}
@@ -5769,6 +6019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5848,6 +6102,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -5966,6 +6224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6083,6 +6345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6153,123 +6419,6 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618756327}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1001 &627255673
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1746290597}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.23
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 3.560745e-15
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000004371139
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Name
-      value: Traffic cone 1 (43)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 627255677}
-  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
---- !u!4 &627255674 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 627255673}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &627255675 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 627255673}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &627255677
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627255675}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -6391,6 +6540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6508,6 +6661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6620,6 +6777,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -6812,6 +6973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6891,6 +7056,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -7083,6 +7252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7162,6 +7335,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -7416,6 +7593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7533,6 +7714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7612,6 +7797,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -7860,6 +8049,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -8114,6 +8307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (06)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -8193,6 +8390,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -8310,6 +8511,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -8465,6 +8670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -8618,6 +8827,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -8835,6 +9048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -8989,6 +9206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -9022,123 +9243,6 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848259218}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1001 &849544532
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1746290597}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.47
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.805
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 3.560745e-15
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000004371139
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Name
-      value: Traffic cone 1 (45)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 849544536}
-  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
---- !u!4 &849544533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 849544532}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &849544534 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 849544532}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &849544536
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849544534}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -9462,7 +9566,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: MoveToGoal
   TeamId: 0
   m_UseChildSensors: 1
@@ -9499,7 +9603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.71
+      value: 26.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9532,6 +9636,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -9686,6 +9794,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -9878,6 +9990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10062,6 +10178,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -10254,6 +10374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10408,6 +10532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10561,6 +10689,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -10944,6 +11076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10991,6 +11127,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 957729186}
+  - {fileID: 1890199228}
+  - {fileID: 541549581}
   - {fileID: 1466916266}
   - {fileID: 588892248}
   - {fileID: 1890499077}
@@ -11073,7 +11211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.64
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11114,6 +11252,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -11268,6 +11410,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -11491,6 +11637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -11649,123 +11799,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1370089600}
   m_SourcePrefab: {fileID: 100100000, guid: d17a4b60c4ca1444392e5efd148745b3, type: 3}
---- !u!1001 &1079302494
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1746290597}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.075
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.805
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 3.560745e-15
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000004371139
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Name
-      value: Traffic cone 1 (39)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1079302498}
-  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
---- !u!4 &1079302495 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1079302494}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1079302496 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1079302494}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1079302498
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079302496}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1091734520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11898,6 +11931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -11977,6 +12014,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -12094,6 +12135,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -12280,6 +12325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -12387,6 +12436,127 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122536962}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &1123115339
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 569426544}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.672
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000081460335
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 3.560745e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Name
+      value: Traffic cone 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1123115342}
+  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+--- !u!4 &1123115340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1123115339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1123115341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1123115339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1123115342
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123115341}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -12829,6 +12999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -13196,6 +13370,60 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 68033288}
   m_SourcePrefab: {fileID: 100100000, guid: d17a4b60c4ca1444392e5efd148745b3, type: 3}
+--- !u!1 &1206865412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206865414}
+  - component: {fileID: 1206865415}
+  m_Layer: 0
+  m_Name: InvisibleWall (1)
+  m_TagString: Percorso
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206865414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206865412}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.349999, y: 1.48, z: 9.51}
+  m_LocalScale: {x: 5.5, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1206865415
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206865412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1222144152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13328,6 +13556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -13445,6 +13677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -13524,6 +13760,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -13642,6 +13882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -13721,6 +13965,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -13981,6 +14229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -14061,6 +14313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -14140,6 +14396,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -14258,6 +14518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (08)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -14337,6 +14601,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -14492,6 +14760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -14508,6 +14780,60 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 126925978}
   m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+--- !u!1 &1306080225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1306080226}
+  - component: {fileID: 1306080227}
+  m_Layer: 0
+  m_Name: InvisibleWall
+  m_TagString: Percorso
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1306080226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306080225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.27, y: 1.48, z: 3.75}
+  m_LocalScale: {x: 5.5, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1306080227
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306080225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1318778893
 GameObject:
   m_ObjectHideFlags: 0
@@ -14523,7 +14849,7 @@ GameObject:
   - component: {fileID: 1318778894}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Arrivo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14555,7 +14881,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14795,6 +15121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -14874,6 +15204,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -14955,6 +15289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -15034,6 +15372,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -15152,6 +15494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -15231,6 +15577,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -15460,6 +15810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -15682,6 +16036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -15866,6 +16224,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -16052,6 +16414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -16131,6 +16497,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -16317,6 +16687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -16396,6 +16770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -16619,6 +16997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -16735,6 +17117,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -16890,6 +17276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (07)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -17006,6 +17396,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -17161,6 +17555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -17278,6 +17676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -17394,6 +17796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -17580,6 +17986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -17626,7 +18036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.55
+      value: 26.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17659,6 +18069,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -17776,6 +18190,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -17998,6 +18416,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -18369,6 +18791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -18485,6 +18911,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -18889,6 +19319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -19043,6 +19477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -19160,6 +19598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -19240,6 +19682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -19297,10 +19743,8 @@ Transform:
   - {fileID: 1365463741}
   - {fileID: 837667225}
   - {fileID: 1794637222}
-  - {fileID: 1079302495}
   - {fileID: 1836164075}
   - {fileID: 1447141404}
-  - {fileID: 849544533}
   - {fileID: 934500198}
   - {fileID: 1843059260}
   - {fileID: 439342399}
@@ -19312,7 +19756,6 @@ Transform:
   - {fileID: 796502095}
   - {fileID: 1534143777}
   - {fileID: 1174279052}
-  - {fileID: 627255674}
   - {fileID: 200270451}
   - {fileID: 2137800628}
   - {fileID: 1235565326}
@@ -19488,6 +19931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -19567,6 +20014,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -19826,6 +20277,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -20160,6 +20615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -20388,6 +20847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -20573,6 +21036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -20727,6 +21194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -20843,6 +21314,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -20961,6 +21436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -21078,6 +21557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (06)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -21145,6 +21628,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bed0b0a88a307b246aa6a2c59291204e, type: 3}
       propertyPath: m_Name
       value: Speed breaker 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bed0b0a88a307b246aa6a2c59291204e, type: 3}
+      propertyPath: m_TagString
+      value: Dosso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21214,6 +21701,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -21295,6 +21786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (08)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -21348,50 +21843,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1890499076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1974523266}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1890499077 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1974523266}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1890499081
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890499076}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1001 &1890921096
+--- !u!1001 &1890199227
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 569426544}
+    m_TransformParent: {fileID: 1022245406}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalScale.x
@@ -21407,15 +21865,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.26
+      value: -9.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21447,7 +21905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
-      value: Traffic cone 1 (43)
+      value: Traffic cone 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -21463,25 +21925,62 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1890921100}
+      addedObject: {fileID: 1890199230}
   m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
---- !u!4 &1890921097 stripped
+--- !u!4 &1890199228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1890921096}
+  m_PrefabInstance: {fileID: 1890199227}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1890921098 stripped
+--- !u!1 &1890199229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
-  m_PrefabInstance: {fileID: 1890921096}
+  m_PrefabInstance: {fileID: 1890199227}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1890921100
+--- !u!54 &1890199230
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890921098}
+  m_GameObject: {fileID: 1890199229}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1890499076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1974523266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1890499077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1974523266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1890499081
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890499076}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -21624,6 +22123,127 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907473830}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &1932378841
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 569426544}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.74
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000081460335
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 3.560745e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Name
+      value: Traffic cone 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932378844}
+  m_SourcePrefab: {fileID: 100100000, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+--- !u!4 &1932378842 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1932378841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1932378843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+  m_PrefabInstance: {fileID: 1932378841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1932378844
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932378843}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -21863,6 +22483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -22017,6 +22641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -22107,6 +22735,60 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1969713248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969713250}
+  - component: {fileID: 1969713251}
+  m_Layer: 0
+  m_Name: InvisibleWall (2)
+  m_TagString: Percorso
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969713250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969713248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.349999, y: 1.48, z: 15.62}
+  m_LocalScale: {x: 5.5, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1969713251
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969713248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1974523266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22170,6 +22852,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -22250,6 +22936,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -22516,6 +23206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -22633,6 +23327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -22712,6 +23410,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -23046,6 +23748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23163,6 +23869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23209,7 +23919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.68
+      value: 26.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23242,6 +23952,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -23397,6 +24111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23476,6 +24194,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -23557,6 +24279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23636,6 +24362,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -23717,6 +24447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23796,6 +24530,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -23914,6 +24652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic cone 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -23993,6 +24735,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Name
       value: Traffic cone 1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
+      propertyPath: m_TagString
+      value: Birillo
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: ff2fbbfc1f1bdb24f9e0e4d41f558322, type: 3}
       propertyPath: m_Convex
@@ -24096,3 +24842,6 @@ SceneRoots:
   - {fileID: 553702800}
   - {fileID: 1880001000}
   - {fileID: 1318778898}
+  - {fileID: 1306080226}
+  - {fileID: 1206865414}
+  - {fileID: 1969713250}
