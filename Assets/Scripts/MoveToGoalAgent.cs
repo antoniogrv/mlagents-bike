@@ -18,14 +18,24 @@ public class MoveToGoalAgent : Agent
     public float steerSpeed = 0.01f;
     private float currentRotation = 0f;
 
+    public float fallThreshold = -2f;
+
     public override void OnEpisodeBegin()
     {
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
-        transform.localPosition = Vector3.zero;
+        transform.localPosition = new Vector3(0, 0.17f, 0);
     }
 
     public void FixedUpdate() {
         transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
+
+        if (transform.position.y < fallThreshold)
+        {
+            Debug.Log("La moto è caduta.");
+            SetReward(-100.0f);
+            transform.localPosition = new Vector3(0, 0.17f, 0);
+            EndEpisode();
+        }
     }
 
     public override void OnActionReceived(ActionBuffers actionBuffers)
@@ -61,7 +71,7 @@ public class MoveToGoalAgent : Agent
     {
         currentRotation += steerSpeed * Time.deltaTime;
         transform.Rotate(0, currentRotation, 0);
-        transform.position += new Vector3(1, 0, 0) * steerAmount * Time.deltaTime;
+        transform.position += new Vector3(0.5f, 0, 0) * steerAmount * Time.deltaTime;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
