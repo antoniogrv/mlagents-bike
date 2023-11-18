@@ -14,7 +14,7 @@ public class MoveToGoalAgent : Agent
     [SerializeField] private GameObject flag;
     [SerializeField] private GameObject groundedFlag;
 
-    public float speed = 0.2f;
+    public float speed = 1.0f;
     public float steerSpeed = 0.01f;
     private float currentRotation = 0f;
 
@@ -24,16 +24,17 @@ public class MoveToGoalAgent : Agent
     {
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
         transform.localPosition = new Vector3(0, 0.17f, 0);
+        transform.Rotate(0, 0, 0);
     }
 
     public void FixedUpdate() {
-        transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
+        // transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
 
         if (transform.position.y < fallThreshold)
         {
             Debug.Log("La moto è caduta.");
-            SetReward(-100.0f);
-            transform.localPosition = new Vector3(0, 0.17f, 0);
+            //SetReward(-100.0f);
+            // transform.localPosition = new Vector3(0, 0.17f, 0);
             EndEpisode();
         }
     }
@@ -46,6 +47,10 @@ public class MoveToGoalAgent : Agent
         {
             case 0:
                 // Nessuna sterzata
+                Vector3 direction = transform.forward;
+                float s = speed * Time.deltaTime;
+                transform.Translate(direction * s, Space.World);
+                //transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
                 Debug.Log("Nessuna sterzata");
                 break;
 
@@ -69,9 +74,9 @@ public class MoveToGoalAgent : Agent
 
     private void Steer(float steerAmount)
     {
-        currentRotation += steerSpeed * Time.deltaTime;
+        currentRotation += steerSpeed * Time.deltaTime * 0.1f;
         transform.Rotate(0, currentRotation, 0);
-        transform.position += new Vector3(0.5f, 0, 0) * steerAmount * Time.deltaTime;
+        transform.position += new Vector3(2.0f, 0, 0) * steerAmount * Time.deltaTime;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -112,9 +117,11 @@ public class MoveToGoalAgent : Agent
     }
 
     public void OnTriggerEnter(Collider coll) {
-        if (coll.CompareTag("mid-goal")) {
+        if (coll.CompareTag("mid-goal")) 
+        {
             Debug.Log("Obiettivo intermedio raggiunto!");
-            AddReward(0.25f);
+            AddReward(100.0f);
+            coll.tag = "attraversato";
         }
     }
 }
