@@ -10,12 +10,15 @@ public class MoveToGoalAgent : Agent
 {
     [SerializeField] private Transform targetTransform;
 
+    [SerializeField] private Material red;
+    [SerializeField] private Material green;
+
+    [SerializeField] private GameObject flag; 
+
     public override void OnEpisodeBegin()
     {
-        Debug.Log("OnEpisodeBegin!");
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
-        transform.position = new Vector3(-15f,-0.15f,1.5f);
-        // transform.rotation = Quaternion.identity;
+        transform.localPosition = Vector3.zero;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -23,12 +26,13 @@ public class MoveToGoalAgent : Agent
         sensor.AddObservation(transform.position);
         sensor.AddObservation(targetTransform.position);
     }
+
     public override void OnActionReceived(ActionBuffers actions)
     {
         float moveZ = actions.ContinuousActions[0];
         float moveX = actions.ContinuousActions[1];
 
-        float moveSpeed = 0.2f;
+        float moveSpeed = 0.4f;
 
         transform.position += new Vector3(moveX,0,moveZ) * Time.deltaTime * moveSpeed;
 
@@ -46,6 +50,7 @@ public class MoveToGoalAgent : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<float> continousActions = actionsOut.ContinuousActions;
+
         continousActions[1] = Input.GetAxisRaw("Horizontal");
         continousActions[0] = Input.GetAxisRaw("Vertical");
     }
@@ -56,11 +61,13 @@ public class MoveToGoalAgent : Agent
         {
             SetReward(+1f);
             Debug.Log("Complimenti");
+            flag.GetComponent<Renderer>().material = green;
             EndEpisode();
-        } else if (other.gameObject.CompareTag("Birillo") || other.gameObject.CompareTag("Dosso"))
+        } else if (other.gameObject.CompareTag("Birillo"))
         {
             SetReward(-1f);
             Debug.Log("Ho colpito un cono o una sbarra");
+            flag.GetComponent<Renderer>().material = red;
             EndEpisode();
         }
         else if (other.gameObject.CompareTag("Percorso"))
