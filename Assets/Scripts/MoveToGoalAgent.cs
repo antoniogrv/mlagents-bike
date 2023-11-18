@@ -8,12 +8,15 @@ using UnityEngine.UIElements;
 
 public class MoveToGoalAgent : Agent
 {
-    [SerializeField] private Transform targetTransform;
-
     [SerializeField] private Material red;
     [SerializeField] private Material green;
 
-    [SerializeField] private GameObject flag; 
+    [SerializeField] private GameObject flag;
+    [SerializeField] private GameObject groundedFlag;
+
+    public float speed = 0.2f;
+    public float steerSpeed = 0.01f;
+    private float currentRotation = 0f;
 
     public override void OnEpisodeBegin()
     {
@@ -21,58 +24,87 @@ public class MoveToGoalAgent : Agent
         transform.localPosition = Vector3.zero;
     }
 
-    public override void CollectObservations(VectorSensor sensor)
-    {
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(targetTransform.position);
+    public void FixedUpdate() {
+        transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
     }
 
-    public override void OnActionReceived(ActionBuffers actions)
+    public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        float moveZ = actions.ContinuousActions[0];
-        float moveX = actions.ContinuousActions[1];
+        int action = actionBuffers.DiscreteActions[0];
 
-        float moveSpeed = 0.4f;
+        switch (action)
+        {
+            case 0:
+                // Nessuna sterzata
+                Debug.Log("Nessuna sterzata");
+                break;
 
-        transform.position += new Vector3(moveX,0,moveZ) * Time.deltaTime * moveSpeed;
+            case 1:
+                // Sterza a destra
+                Debug.Log("Sterzata a destra");
+                AddReward(-0.1f);
+                Steer(steerSpeed);
+                break;
 
-        // Converti l'angolo in un vettore di direzione
-        // Vector3 direction = new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), 0f, Mathf.Cos(angle * Mathf.Deg2Rad));
+            case 2:
+                // Sterza a sinistra
+                Debug.Log("Sterzata a sinistra");
+                AddReward(-0.1f);
+                Steer(-steerSpeed);
+                break;
+        }
 
-        // Calcola il movimento in base alle azioni ricevute
-        //Vector3 movement = direction * move * moveSpeed * Time.deltaTime;
+        // ... Altri comportamenti e aggiornamenti dell'agente ...
+    }
 
-        // Applica il movimento all'oggetto
-        // transform.Translate(movement);
-        //transform.Rotate(0f, angle*0.1f, 0f);
+    private void Steer(float steerAmount)
+    {
+        currentRotation += steerSpeed * Time.deltaTime;
+        transform.Rotate(0, currentRotation, 0);
+        transform.position += new Vector3(1, 0, 0) * steerAmount * Time.deltaTime;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        ActionSegment<float> continousActions = actionsOut.ContinuousActions;
+        // Implementa il controllo manuale durante il testing
+        var discreteActions = actionsOut.DiscreteActions;
 
-        continousActions[1] = Input.GetAxisRaw("Horizontal");
-        continousActions[0] = Input.GetAxisRaw("Vertical");
+        discreteActions[0] = 0;
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            discreteActions[0] = 1;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            discreteActions[0] = 2;
+        }
     }
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Arrivo"))
+        if (other.gameObject.CompareTag("goal"))
         {
-            SetReward(+1f);
-            Debug.Log("Complimenti");
+            SetReward(+10.0f);
             flag.GetComponent<Renderer>().material = green;
+            groundedFlag.GetComponent<Renderer>().material = red;
+            Debug.Log("Obiettivo raggiunto!");
             EndEpisode();
-        } else if (other.gameObject.CompareTag("Birillo"))
+        } 
+        else if (other.gameObject.CompareTag("obstacle"))
         {
-            SetReward(-1f);
-            Debug.Log("Ho colpito un cono o una sbarra");
+            SetReward(-10.0f);
             flag.GetComponent<Renderer>().material = red;
+            groundedFlag.GetComponent<Renderer>().material = red;
+            Debug.Log("Ostacolo colpito!");
             EndEpisode();
         }
-        else if (other.gameObject.CompareTag("Percorso"))
-        {
-            SetReward(+10f);
+    }
+
+    public void OnTriggerEnter(Collider coll) {
+        if (coll.CompareTag("mid-goal")) {
+            Debug.Log("Obiettivo intermedio raggiunto!");
+            AddReward(0.25f);
         }
     }
 }
