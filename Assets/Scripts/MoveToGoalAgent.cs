@@ -18,9 +18,16 @@ public class MoveToGoalAgent : Agent
 
     public float speed = 1.0f;
     public float steerSpeed = 0.01f;
+
     private float currentRotation = 0f;
 
     public float fallThreshold = -2f;
+
+    private float midGoalReward = 2.0f; // Checkpoint lungo il percorso
+    private float returnBackReward = -100.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
+    private float steeringReward = -1.0f; // Disincentivo per la sterzata
+    private float endGoalReward = 100.0f; // Percorso completato
+    private float obstacleReward = -100.0f; // Reward negativo quando la moto urta un ostacolo
 
     public void Start()
     {
@@ -41,13 +48,9 @@ public class MoveToGoalAgent : Agent
     }
 
     public void FixedUpdate() {
-        // transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
-
         if (transform.position.y < fallThreshold)
         {
             Debug.Log("La moto è caduta.");
-            //SetReward(-100.0f);
-            // transform.localPosition = new Vector3(0, 0.17f, 0);
             EndEpisode();
         }
     }
@@ -70,14 +73,14 @@ public class MoveToGoalAgent : Agent
             case 1:
                 // Sterza a destra
                 //Debug.Log("Sterzata a destra");
-                AddReward(-1f);
+                AddReward(steeringReward);
                 Steer(steerSpeed);
                 break;
 
             case 2:
                 // Sterza a sinistra
                 //Debug.Log("Sterzata a sinistra");
-                AddReward(-1f);
+                AddReward(steeringReward);
                 Steer(-steerSpeed);
                 break;
         }
@@ -114,7 +117,7 @@ public class MoveToGoalAgent : Agent
     {
         if (other.gameObject.CompareTag("obstacle"))
         {
-            SetReward(-10.0f);
+            SetReward(obstacleReward);
             flag.GetComponent<Renderer>().material = red;
             groundedFlag.GetComponent<Renderer>().material = red;
             //Debug.Log("Ostacolo colpito!");
@@ -125,7 +128,7 @@ public class MoveToGoalAgent : Agent
     public void OnTriggerEnter(Collider coll) {
         if (coll.gameObject.CompareTag("goal"))
         {
-            SetReward(+1000.0f);
+            SetReward(endGoalReward);
             flag.GetComponent<Renderer>().material = green;
             groundedFlag.GetComponent<Renderer>().material = red;
             //Debug.Log("Obiettivo raggiunto!");
@@ -134,21 +137,13 @@ public class MoveToGoalAgent : Agent
         if (coll.CompareTag("attraversato"))
         {
             Debug.Log("Ancora?");
-            AddReward(-10f);
+            AddReward(returnBackReward);
         }
         if (coll.CompareTag("mid-goal")) 
         {
             if (!colliderList.Contains(coll))
             {
-                // Ignora l'altezza (componente Y) nella misurazione della distanza
-                //Vector2 thisPosition = new Vector2(transform.position.x, transform.position.z);
-                //Vector2 otherPosition = new Vector2(coll.transform.position.x, coll.transform.position.z);
-
-                // Calcola la distanza tra i centri dei due collider (ignorando l'altezza)
-                //float distance = Vector2.Distance(thisPosition, otherPosition);
-                //Debug.Log("Distanza misurata: " + distance);
-                
-                AddReward(30.0f);
+                AddReward(midGoalReward);
 
             }
         }
