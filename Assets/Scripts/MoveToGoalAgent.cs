@@ -24,10 +24,10 @@ public class MoveToGoalAgent : Agent
     public float fallThreshold = -2f;
 
     private float midGoalReward = 2.0f; // Checkpoint lungo il percorso
-    private float returnBackReward = -100.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
+    private float returnBackReward = -1000.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
     private float steeringReward = -1.0f; // Disincentivo per la sterzata
-    private float endGoalReward = 100.0f; // Percorso completato
-    private float obstacleReward = -100.0f; // Reward negativo quando la moto urta un ostacolo
+    private float endGoalReward = 1000.0f; // Percorso completato
+    private float obstacleReward = -1000.0f; // Reward negativo quando la moto urta un ostacolo
 
     public void Start()
     {
@@ -117,7 +117,7 @@ public class MoveToGoalAgent : Agent
     {
         if (other.gameObject.CompareTag("obstacle"))
         {
-            SetReward(obstacleReward);
+            AddReward(obstacleReward);
             flag.GetComponent<Renderer>().material = red;
             groundedFlag.GetComponent<Renderer>().material = red;
             //Debug.Log("Ostacolo colpito!");
@@ -128,7 +128,7 @@ public class MoveToGoalAgent : Agent
     public void OnTriggerEnter(Collider coll) {
         if (coll.gameObject.CompareTag("goal"))
         {
-            SetReward(endGoalReward);
+            AddReward(endGoalReward);
             flag.GetComponent<Renderer>().material = green;
             groundedFlag.GetComponent<Renderer>().material = red;
             //Debug.Log("Obiettivo raggiunto!");
@@ -138,6 +138,7 @@ public class MoveToGoalAgent : Agent
         {
             Debug.Log("Ancora?");
             AddReward(returnBackReward);
+            EndEpisode();
         }
         if (coll.CompareTag("mid-goal")) 
         {
