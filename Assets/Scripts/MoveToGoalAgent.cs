@@ -23,7 +23,7 @@ public class MoveToGoalAgent : Agent
 
     public float fallThreshold = -2f;
 
-    private float midGoalReward = 2.0f; // Checkpoint lungo il percorso
+    private float midGoalReward = 50.0f; // Checkpoint lungo il percorso
     private float returnBackReward = -1000.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
     private float steeringReward = -1.0f; // Disincentivo per la sterzata
     private float endGoalReward = 1000.0f; // Percorso completato
