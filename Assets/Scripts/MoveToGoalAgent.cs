@@ -154,9 +154,9 @@ public class MoveToGoalAgent : Agent
     {
         if (other.CompareTag("mid-goal"))
         {
-            if (colliderList.Count > 2)
+            if (colliderList.Count > 1)
             {
-                colliderList[colliderList.Count - 2].tag = "attraversato";
+                colliderList[colliderList.Count - 1].tag = "attraversato";
             }
             
             if (!colliderList.Contains(other))
