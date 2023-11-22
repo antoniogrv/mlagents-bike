@@ -50,8 +50,10 @@ public class MoveToGoalCalamityAgent : Agent
     }
 
     IEnumerator TickTimer() {
+        Debug.Log("Starting the timer!");
         do {
             int newTime = GetTimer() - 1;
+            //Debug.Log("new time = " + newTime);
             SetTimer(newTime.ToString());
             yield return new WaitForSeconds(1);
         } while(GetTimer() > 0);
@@ -154,8 +156,8 @@ public class MoveToGoalCalamityAgent : Agent
             flag.GetComponent<Renderer>().material = red;
             groundedFlag.GetComponent<Renderer>().material = red;
             //Debug.Log("Ostacolo colpito!");
-            EndEpisode();
             StopCoroutine("TickTimer");
+            EndEpisode();
         }
     }
 
@@ -166,15 +168,15 @@ public class MoveToGoalCalamityAgent : Agent
             flag.GetComponent<Renderer>().material = green;
             groundedFlag.GetComponent<Renderer>().material = green;
             //Debug.Log("Obiettivo raggiunto!");
-            EndEpisode();
             StopCoroutine("TickTimer");
+            EndEpisode();
         }
         if (coll.CompareTag("attraversato"))
         {
             Debug.Log("Ancora?");
             AddReward(returnBackReward);
-            EndEpisode();
             StopCoroutine("TickTimer");
+            EndEpisode();
         }
         if (coll.CompareTag("mid-goal")) 
         {
