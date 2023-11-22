@@ -1,0 +1,65 @@
+{
+    "MoveToGoal": {
+        "checkpoints": [
+            {
+                "steps": 999983,
+                "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-999983.onnx",
+                "reward": 913.6666666666666,
+                "creation_time": 1700646616.3317986,
+                "auxillary_file_paths": [
+                    "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-999983.pt"
+                ]
+            },
+            {
+                "steps": 1499974,
+                "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-1499974.onnx",
+                "reward": 2606.25,
+                "creation_time": 1700647068.0316021,
+                "auxillary_file_paths": [
+                    "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-1499974.pt"
+                ]
+            },
+            {
+                "steps": 1999973,
+                "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-1999973.onnx",
+                "reward": 4558.666666666667,
+                "creation_time": 1700647517.874507,
+                "auxillary_file_paths": [
+                    "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-1999973.pt"
+                ]
+            },
+            {
+                "steps": 2499988,
+                "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-2499988.onnx",
+                "reward": 1569.0,
+                "creation_time": 1700647968.3119538,
+                "auxillary_file_paths": [
+                    "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-2499988.pt"
+                ]
+            },
+            {
+                "steps": 2500052,
+                "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-2500052.onnx",
+                "reward": 1569.0,
+                "creation_time": 1700647968.3563566,
+                "auxillary_file_paths": [
+                    "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-2500052.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2500052,
+            "file_path": "results\\TestAddestramento22Novembre\\MoveToGoal.onnx",
+            "reward": 1569.0,
+            "creation_time": 1700647968.3563566,
+            "auxillary_file_paths": [
+                "results\\TestAddestramento22Novembre\\MoveToGoal\\MoveToGoal-2500052.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

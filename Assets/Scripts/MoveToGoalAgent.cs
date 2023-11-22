@@ -130,7 +130,7 @@ public class MoveToGoalAgent : Agent
         {
             AddReward(endGoalReward);
             flag.GetComponent<Renderer>().material = green;
-            groundedFlag.GetComponent<Renderer>().material = red;
+            groundedFlag.GetComponent<Renderer>().material = green;
             //Debug.Log("Obiettivo raggiunto!");
             EndEpisode();
         }
