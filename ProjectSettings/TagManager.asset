@@ -9,6 +9,7 @@ TagManager:
   - road
   - mid-goal
   - attraversato
+  - plane
   layers:
   - Default
   - TransparentFX

@@ -87,7 +87,6 @@ public class MoveToGoalCalamityAgent : Agent
             StopCoroutine("TickTimer");
         }
     }
-    
 
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
