@@ -10,6 +10,7 @@ TagManager:
   - mid-goal
   - attraversato
   - plane
+  - puddle
   layers:
   - Default
   - TransparentFX

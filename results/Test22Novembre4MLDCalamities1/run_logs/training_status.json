@@ -1,0 +1,56 @@
+{
+    "MoveToGoal": {
+        "checkpoints": [
+            {
+                "steps": 499943,
+                "file_path": "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-499943.onnx",
+                "reward": -300.0,
+                "creation_time": 1700676284.593293,
+                "auxillary_file_paths": [
+                    "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-499943.pt"
+                ]
+            },
+            {
+                "steps": 999953,
+                "file_path": "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-999953.onnx",
+                "reward": null,
+                "creation_time": 1700676730.9813051,
+                "auxillary_file_paths": [
+                    "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-999953.pt"
+                ]
+            },
+            {
+                "steps": 1499971,
+                "file_path": "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-1499971.onnx",
+                "reward": 422.57142857142856,
+                "creation_time": 1700677172.7772918,
+                "auxillary_file_paths": [
+                    "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-1499971.pt"
+                ]
+            },
+            {
+                "steps": 1597664,
+                "file_path": "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-1597664.onnx",
+                "reward": -462.0,
+                "creation_time": 1700677296.86088,
+                "auxillary_file_paths": [
+                    "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-1597664.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1597664,
+            "file_path": "results\\Test22Novembre4MLDCalamities1\\MoveToGoal.onnx",
+            "reward": -462.0,
+            "creation_time": 1700677296.86088,
+            "auxillary_file_paths": [
+                "results\\Test22Novembre4MLDCalamities1\\MoveToGoal\\MoveToGoal-1597664.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

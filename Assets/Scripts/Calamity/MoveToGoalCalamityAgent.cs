@@ -19,6 +19,8 @@ public class MoveToGoalCalamityAgent : Agent
 
     public int defaultTime = 11;
 
+    private Boolean reversed = false;
+
     private List<Collider> colliderList;
 
     public float speed = 1.0f;
@@ -125,8 +127,13 @@ public class MoveToGoalCalamityAgent : Agent
 
     private void Steer(float steerAmount)
     {
-        //currentRotation += steerAmount * Time.deltaTime * 0.1f;
         currentRotation = steerAmount * Time.deltaTime * 100;
+        
+        if (reversed)
+        {
+            currentRotation *= -1f;
+        }
+
         transform.Rotate(0, currentRotation, 0);
         transform.position += new Vector3(2.0f, 0, 0) * steerAmount * Time.deltaTime;
     }
@@ -162,6 +169,11 @@ public class MoveToGoalCalamityAgent : Agent
     }
 
     public void OnTriggerEnter(Collider coll) {
+        if (coll.gameObject.CompareTag("puddle"))
+        {
+            Debug.Log("Entro nela pozzanghera");
+            reversed = true;
+        }
         if (coll.gameObject.CompareTag("goal"))
         {
             AddReward(endGoalReward);
@@ -190,6 +202,11 @@ public class MoveToGoalCalamityAgent : Agent
 
     public void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.CompareTag("puddle"))
+        {
+            Debug.Log("Esco dalla pozzanghera");
+            reversed = false;
+        }
         if (other.CompareTag("mid-goal"))
         {
             if (colliderList.Count > 1)
