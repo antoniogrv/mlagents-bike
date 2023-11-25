@@ -26,6 +26,10 @@ public class MoveToGoalCalamityAgent : Agent
     public float speed = 1.0f;
     public float steerSpeed = 0.01f;
 
+    public float minSpeed = 1.0f;
+    public float maxSpeed = 5.0f;
+    public float accelerationStep = 0.3f;
+
     public TMP_Text timer;
 
     private float currentRotation = 0f;
@@ -96,6 +100,20 @@ public class MoveToGoalCalamityAgent : Agent
     {
         int action = actionBuffers.DiscreteActions[0];
 
+        int accelerate = actionBuffers.DiscreteActions[1];
+
+        switch (accelerate)
+        {
+            case 0:
+                if (speed < maxSpeed) speed += accelerationStep;
+                break;
+            case 1:
+                break;
+            case 2:
+                if (speed > minSpeed) speed -= accelerationStep;
+                break;
+        }
+
         switch (action)
         {
             case 0:
@@ -142,6 +160,17 @@ public class MoveToGoalCalamityAgent : Agent
     {
         // Implementa il controllo manuale durante il testing
         var discreteActions = actionsOut.DiscreteActions;
+
+        discreteActions[1] = 1;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            discreteActions[1] = 0;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            discreteActions[1] = 2;
+        }
 
         discreteActions[0] = 0;
 
@@ -195,7 +224,6 @@ public class MoveToGoalCalamityAgent : Agent
             if (!colliderList.Contains(coll))
             {
                 AddReward(midGoalReward);
-
             }
         }
     }

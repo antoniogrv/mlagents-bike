@@ -1,0 +1,47 @@
+{
+    "MoveToGoal": {
+        "checkpoints": [
+            {
+                "steps": 499971,
+                "file_path": "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-499971.onnx",
+                "reward": -620.25,
+                "creation_time": 1700834345.4548898,
+                "auxillary_file_paths": [
+                    "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-499971.pt"
+                ]
+            },
+            {
+                "steps": 999948,
+                "file_path": "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-999948.onnx",
+                "reward": -803.0,
+                "creation_time": 1700834842.7837236,
+                "auxillary_file_paths": [
+                    "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-999948.pt"
+                ]
+            },
+            {
+                "steps": 1217381,
+                "file_path": "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-1217381.onnx",
+                "reward": -632.6666666666666,
+                "creation_time": 1700835061.4103384,
+                "auxillary_file_paths": [
+                    "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-1217381.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1217381,
+            "file_path": "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal.onnx",
+            "reward": -632.6666666666666,
+            "creation_time": 1700835061.4103384,
+            "auxillary_file_paths": [
+                "results\\Test2SpeedChangePeople24Novembre\\MoveToGoal\\MoveToGoal-1217381.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

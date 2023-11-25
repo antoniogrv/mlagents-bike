@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.56158954, g: 0.72180885, b: 0.817857, a: 1}
+  m_IndirectSpecularColor: {r: 0.56158954, g: 0.7218089, b: 0.817857, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -34407,7 +34407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.49
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34415,7 +34415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.07
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 495036, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34469,7 +34469,7 @@ PrefabInstance:
       addedObject: {fileID: 1676175506}
     - targetCorrespondingSourceObject: {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1676175505}
+      addedObject: {fileID: 1676175509}
     - targetCorrespondingSourceObject: {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1676175504}
@@ -34531,29 +34531,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 1
   TakeActionsBetweenDecisions: 1
---- !u!114 &1676175505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676175502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae99ee60105e85249ba1df3202da394f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
-  red: {fileID: 2100000, guid: 771bb1023bc90c6449753c6e874c25f0, type: 2}
-  green: {fileID: 2100000, guid: eda4480ca12be9a4a9c7cab54ec3b4f5, type: 2}
-  flag: {fileID: 2031818846}
-  groundedFlag: {fileID: 594053273}
-  speed: 3
-  steerSpeed: 2
-  fallThreshold: -2
 --- !u!114 &1676175506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34571,12 +34548,12 @@ MonoBehaviour:
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
-      BranchSizes: 03000000
-    VectorActionSize: 03000000
+      BranchSizes: 0300000003000000
+    VectorActionSize: 0300000003000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 40af19143d1bdb54b8638e11fead75de, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 20a18551fb40b2845bb45d50003ef1e6, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 2
   m_BehaviorName: MoveToGoal
@@ -34612,6 +34589,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1676175509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676175502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0d91232e04e2c4d8cc795691bfa09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  red: {fileID: 2100000, guid: 771bb1023bc90c6449753c6e874c25f0, type: 2}
+  green: {fileID: 2100000, guid: eda4480ca12be9a4a9c7cab54ec3b4f5, type: 2}
+  flag: {fileID: 2031818846}
+  groundedFlag: {fileID: 594053273}
+  speed: 3
+  steerSpeed: 2
+  minSpeed: 1
+  maxSpeed: 9
+  accelerationStep: 0.3
+  fallThreshold: -2
 --- !u!1001 &1682659594
 PrefabInstance:
   m_ObjectHideFlags: 0
