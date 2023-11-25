@@ -36,14 +36,32 @@ public class MoveToGoalCalamityAgent : Agent
 
     public float fallThreshold = -2f;
 
+    private float[] midGoalCurveReward;
+    private GameObject[] curveObject;
     private float midGoalReward = 50.0f; // Checkpoint lungo il percorso
     private float returnBackReward = -1000.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
     private float steeringReward = -1.0f; // Disincentivo per la sterzata
     private float endGoalReward = 1000.0f; // Percorso completato
     private float obstacleReward = -1000.0f; // Reward negativo quando la moto urta un ostacolo
 
-    public void Start()
+    void Start()
     {
+        curveObject = new GameObject[6];
+
+        for (int i = 100; i < 106; i++)
+        {
+            GameObject tempCurveObject = GameObject.Find("Mid-goal (" + i + ")");
+            if (tempCurveObject != null)
+            {
+                curveObject[i - 100] = tempCurveObject;
+            }
+            else
+            {
+                Debug.Log("Oggetto non trovato con il nome: " + "Mid-goal (" + i + ")");
+            }
+        }
+
+        midGoalCurveReward = new float[3];
         colliderList = new List<Collider>();
     }
 
@@ -54,6 +72,16 @@ public class MoveToGoalCalamityAgent : Agent
     public void SetTimer(string text) {
         timer.text = text;
     }
+
+    public void SetCurveGoalReward(float midGoalCurve, float midGoalCurve2, float midGoalCurve3){
+        midGoalCurveReward[0] = midGoalCurve;
+        midGoalCurveReward[1] = midGoalCurve2;
+        midGoalCurveReward[2] = midGoalCurve3;
+
+        //Debug.Log("mid-goal-curve: " + midGoalCurveReward[0]);
+        //Debug.Log("mid-goal-curve2: " + midGoalCurveReward[1]);
+        //Debug.Log("mid-goal-curve3: " + midGoalCurveReward[2]);
+    } 
 
     IEnumerator TickTimer() {
         Debug.Log("Starting the timer!");
@@ -80,6 +108,17 @@ public class MoveToGoalCalamityAgent : Agent
         {
             coll.tag = "mid-goal";
         }
+
+        for (int i = 100; i <= 106; i++)
+        {
+            if(i == 100 || i == 103)
+                curveObject[i - 100].tag = "mid-goal-curve";
+            if(i == 101 || i == 104)
+                curveObject[i - 100].tag = "mid-goal-curve-2";
+            if(i == 102 || i == 105)
+                curveObject[i - 100].tag = "mid-goal-curve-3";
+        }
+
         colliderList.Clear();
         currentRotation = 0f;
 
@@ -226,6 +265,27 @@ public class MoveToGoalCalamityAgent : Agent
                 AddReward(midGoalReward);
             }
         }
+        if (coll.CompareTag("mid-goal-curve"))
+        {
+            if (!colliderList.Contains(coll))
+            {
+                AddReward(midGoalCurveReward[0]);
+            }
+        }
+        if (coll.CompareTag("mid-goal-curve-2"))
+        {
+            if (!colliderList.Contains(coll))
+            {
+                AddReward(midGoalCurveReward[1]);
+            }
+        }
+        if (coll.CompareTag("mid-goal-curve-3"))
+        {
+            if (!colliderList.Contains(coll))
+            {
+                AddReward(midGoalCurveReward[2]);
+            }
+        }
     }
 
     public void OnTriggerExit(Collider other)
@@ -235,7 +295,7 @@ public class MoveToGoalCalamityAgent : Agent
             Debug.Log("Esco dalla pozzanghera");
             reversed = false;
         }
-        if (other.CompareTag("mid-goal"))
+        if (other.CompareTag("mid-goal") || (other.CompareTag("mid-goal-curve") || other.CompareTag("mid-goal-curve-2") || other.CompareTag("mid-goal-curve-3") ) )
         {
             if (colliderList.Count > 1)
             {
