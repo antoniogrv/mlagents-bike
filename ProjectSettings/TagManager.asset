@@ -11,6 +11,11 @@ TagManager:
   - attraversato
   - plane
   - puddle
+  - fosso
+  - mid-goal-a
+  - mid-goal-b
+  - muro-a
+  - muro-b
   layers:
   - Default
   - TransparentFX

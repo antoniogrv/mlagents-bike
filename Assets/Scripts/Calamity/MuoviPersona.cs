@@ -58,7 +58,6 @@ public class MuoviPersona : MonoBehaviour
 
         if (planes.Length == 0)
         {
-            Debug.LogError("Manca il piano");
             return;
         }
 
@@ -76,7 +75,6 @@ public class MuoviPersona : MonoBehaviour
         }
         if (nearestPlane == null)
         {
-            Debug.LogError("Plane not assigned!");
             return;
         }
 
@@ -96,7 +94,6 @@ public class MuoviPersona : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Sono entrato in :" + other.gameObject.name);
         Transform otherTransform = other.gameObject.transform;
 
         // Raise the object in height by 2.20 units
@@ -109,7 +106,6 @@ public class MuoviPersona : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-       Debug.Log("Sono uscito da :" + other.gameObject.name);
         Transform otherTransform = other.gameObject.transform;
 
         // Raise the object in height by 2.20 units

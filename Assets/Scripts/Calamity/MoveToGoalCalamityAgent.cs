@@ -17,11 +17,19 @@ public class MoveToGoalCalamityAgent : Agent
     [SerializeField] private GameObject flag;
     [SerializeField] private GameObject groundedFlag;
 
+    public GameObject muroA;
+    private List<GameObject> muroAchildren;
+
+    public GameObject muroB;
+    private List<GameObject> muroBchildren;
+
     public int defaultTime = 11;
 
     private Boolean reversed = false;
 
     private List<Collider> colliderList;
+
+    public int fossiCounter = 0;
 
     public float speed = 1.0f;
     public float steerSpeed = 0.01f;
@@ -36,15 +44,48 @@ public class MoveToGoalCalamityAgent : Agent
 
     public float fallThreshold = -2f;
 
+    private int MAX_FOSSI = 2;
+
     private float midGoalReward = 50.0f; // Checkpoint lungo il percorso
     private float returnBackReward = -1000.0f; // Reward negativo quando la moto torna indietro invece di proseguire davanti
     private float steeringReward = -1.0f; // Disincentivo per la sterzata
     private float endGoalReward = 1000.0f; // Percorso completato
     private float obstacleReward = -1000.0f; // Reward negativo quando la moto urta un ostacolo
+    private float maxFossiReward = -1000.0f; // Reward negativo quando si colpisce il numero max di fossi
+    private float fossoReward = -500.0f; // Reward negativo quando si colpisce un fosso
 
     public void Start()
     {
+        muroAchildren = new List<GameObject>();
+        muroBchildren = new List<GameObject>();
+
+        initChildPool(muroA, muroAchildren);
+        initChildPool(muroB, muroBchildren);
+
         colliderList = new List<Collider>();
+    }
+
+    void initChildPool(GameObject muro, List<GameObject> array)
+    {
+        Transform parentTransform = gameObject.transform;
+
+        for (int i = 0; i < parentTransform.childCount; i++)
+        {
+            Transform childTransform = parentTransform.GetChild(i);
+            GameObject childGameObject = childTransform.gameObject;
+
+            array.Add(childGameObject);
+        }
+    }
+
+    void setPoolTag(List<GameObject> array, string tag) 
+    {
+        foreach(GameObject obj in array)
+        {
+            obj.tag = tag;
+        }
+
+        Debug.Log("Settato il tag " + tag + " ad un certo pool di oggetti");
     }
 
     public int GetTimer() {
@@ -73,8 +114,12 @@ public class MoveToGoalCalamityAgent : Agent
     public override void OnEpisodeBegin()
     {
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
+        fossiCounter = 0;
         transform.localPosition = new Vector3(0, 0.17f, 0);
         transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        setPoolTag(muroAchildren, "mid-goal");
+        setPoolTag(muroBchildren, "mid-goal");
 
         foreach (Collider coll in colliderList)
         {
@@ -90,7 +135,6 @@ public class MoveToGoalCalamityAgent : Agent
     public void FixedUpdate() {
         if (transform.position.y < fallThreshold)
         {
-            //Debug.Log("La moto è caduta.");
             EndEpisode();
             StopCoroutine("TickTimer");
         }
@@ -121,20 +165,16 @@ public class MoveToGoalCalamityAgent : Agent
                 Vector3 direction = transform.forward;
                 float s = speed * Time.deltaTime;
                 transform.Translate(direction * s, Space.World);
-                //transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
-                //Debug.Log("Nessuna sterzata");
                 break;
 
             case 1:
                 // Sterza a destra
-                //Debug.Log("Sterzata a destra");
                 AddReward(steeringReward);
                 Steer(steerSpeed);
                 break;
 
             case 2:
                 // Sterza a sinistra
-                //Debug.Log("Sterzata a sinistra");
                 AddReward(steeringReward);
                 Steer(-steerSpeed);
                 break;
@@ -191,7 +231,6 @@ public class MoveToGoalCalamityAgent : Agent
             AddReward(obstacleReward);
             flag.GetComponent<Renderer>().material = red;
             groundedFlag.GetComponent<Renderer>().material = red;
-            //Debug.Log("Ostacolo colpito!");
             StopCoroutine("TickTimer");
             EndEpisode();
         }
@@ -200,21 +239,36 @@ public class MoveToGoalCalamityAgent : Agent
     public void OnTriggerEnter(Collider coll) {
         if (coll.gameObject.CompareTag("puddle"))
         {
-            //Debug.Log("Entro nela pozzanghera");
             reversed = true;
+        }
+        if (coll.gameObject.CompareTag("fosso"))
+        {
+            fossiCounter = ++fossiCounter;
+
+            Debug.Log("Numero di fossi colpiti: " + fossiCounter);
+
+            if(fossiCounter >= MAX_FOSSI) 
+            {
+                AddReward(maxFossiReward);
+                EndEpisode();
+            } 
+            else 
+            {
+                AddReward(fossoReward);
+            }
+            
         }
         if (coll.gameObject.CompareTag("goal"))
         {
             AddReward(endGoalReward);
             flag.GetComponent<Renderer>().material = green;
             groundedFlag.GetComponent<Renderer>().material = green;
-            //Debug.Log("Obiettivo raggiunto!");
             StopCoroutine("TickTimer");
             EndEpisode();
         }
         if (coll.CompareTag("attraversato"))
         {
-            //Debug.Log("Ancora?");
+
             AddReward(returnBackReward);
             StopCoroutine("TickTimer");
             EndEpisode();
@@ -232,11 +286,21 @@ public class MoveToGoalCalamityAgent : Agent
     {
         if (other.gameObject.CompareTag("puddle"))
         {
-            //Debug.Log("Esco dalla pozzanghera");
             reversed = false;
         }
+
         if (other.CompareTag("mid-goal"))
         {
+            if (other.transform.parent.gameObject.tag == "muro-a") 
+            {
+                setPoolTag(muroAchildren, "attraversato");
+            }
+
+            if (other.transform.parent.gameObject.tag == "muro-b") 
+            {
+                setPoolTag(muroBchildren, "attraversato");
+            }
+
             if (colliderList.Count > 1)
             {
                 colliderList[colliderList.Count - 1].tag = "attraversato";
