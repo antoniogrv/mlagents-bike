@@ -9,11 +9,12 @@ using Vector3 = UnityEngine.Vector3;
 
 public class MuoviPersona : MonoBehaviour
 {
-    public float speed = 2.0f; // Adjust the speed as needed
+    public float speed = 1.25f;
     public GameObject nearestPlane;
+
     private float direction = -1.0f;
     private bool hasReversed = false;
-    //private float lenght = 2.5f;
+    
     private Vector3 start;
     private Vector3 end;
 
@@ -22,10 +23,9 @@ public class MuoviPersona : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.back * direction * speed * Time.deltaTime);
-        //if (transform.position.z < start.z || transform.position.z > end.z) direction *= -1f;
+
         if ((transform.position.z < start.z && hasReversed) || (transform.position.z > end.z && !hasReversed))
         {
-            //Debug.Log("Cambiando direzione!");
             hasReversed = !hasReversed;
             transform.rotation *= Quaternion.Euler(0, 180, 0);
         }
@@ -36,11 +36,9 @@ public class MuoviPersona : MonoBehaviour
 
         Vector3 currentScale = transform.localScale;
 
-        // Calculate the proportional increase (15% bigger)
         float proportionalIncrease = 0.22f;
         Vector3 newScale = currentScale * (1.0f + proportionalIncrease);
 
-        // Apply the new scale to the GameObject
         transform.localScale = newScale;
 
         Rigidbody myRigidbody = GetComponent<Rigidbody>();
@@ -48,7 +46,6 @@ public class MuoviPersona : MonoBehaviour
 
         if (myRigidbody == null)
         {
-            // Add a Rigidbody component to the GameObject
             myRigidbody = gameObject.AddComponent<Rigidbody>();
             myRigidbody.isKinematic = true;
         }
@@ -96,7 +93,6 @@ public class MuoviPersona : MonoBehaviour
     {
         Transform otherTransform = other.gameObject.transform;
 
-        // Raise the object in height by 2.20 units
         otherTransform.position = new Vector3(
             otherTransform.position.x,
             otherTransform.position.y + 2.20f,
@@ -108,7 +104,6 @@ public class MuoviPersona : MonoBehaviour
     {
         Transform otherTransform = other.gameObject.transform;
 
-        // Raise the object in height by 2.20 units
         otherTransform.position = new Vector3(
             otherTransform.position.x,
             otherTransform.position.y - 2.20f,
