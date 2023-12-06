@@ -63,7 +63,7 @@ public class SpawnPerson : MonoBehaviour
         // Puoi anche posizionare il collider se necessario
         // Ad esempio, puoi spostare il collider in alto di 0.5 unità rispetto al centro dell'oggetto
         boxCollider.center = new Vector3(0f, 1f, 0f);
-        Debug.Log("Aggiunto!");
+        //Debug.Log("Aggiunto!");
     }
 
     IEnumerator CasualWaiting(GameObject plane)

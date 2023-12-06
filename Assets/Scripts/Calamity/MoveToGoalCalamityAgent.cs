@@ -56,7 +56,7 @@ public class MoveToGoalCalamityAgent : Agent
     }
 
     IEnumerator TickTimer() {
-        Debug.Log("Starting the timer!");
+        //Debug.Log("Starting the timer!");
         do {
             int newTime = GetTimer() - 1;
             //Debug.Log("new time = " + newTime);
@@ -90,7 +90,7 @@ public class MoveToGoalCalamityAgent : Agent
     public void FixedUpdate() {
         if (transform.position.y < fallThreshold)
         {
-            Debug.Log("La moto è caduta.");
+            //Debug.Log("La moto è caduta.");
             EndEpisode();
             StopCoroutine("TickTimer");
         }
@@ -200,7 +200,7 @@ public class MoveToGoalCalamityAgent : Agent
     public void OnTriggerEnter(Collider coll) {
         if (coll.gameObject.CompareTag("puddle"))
         {
-            Debug.Log("Entro nela pozzanghera");
+            //Debug.Log("Entro nela pozzanghera");
             reversed = true;
         }
         if (coll.gameObject.CompareTag("goal"))
@@ -214,7 +214,7 @@ public class MoveToGoalCalamityAgent : Agent
         }
         if (coll.CompareTag("attraversato"))
         {
-            Debug.Log("Ancora?");
+            //Debug.Log("Ancora?");
             AddReward(returnBackReward);
             StopCoroutine("TickTimer");
             EndEpisode();
@@ -232,7 +232,7 @@ public class MoveToGoalCalamityAgent : Agent
     {
         if (other.gameObject.CompareTag("puddle"))
         {
-            Debug.Log("Esco dalla pozzanghera");
+            //Debug.Log("Esco dalla pozzanghera");
             reversed = false;
         }
         if (other.CompareTag("mid-goal"))
