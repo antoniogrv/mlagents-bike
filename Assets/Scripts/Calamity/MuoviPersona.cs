@@ -16,9 +16,6 @@ public class MuoviPersona : MonoBehaviour
     //private float lenght = 2.5f;
     private Vector3 start;
     private Vector3 end;
-    private float zSaved;
-
-    private MoveToGoalCalamityAgent agentScript;
 
     void Update()
     {
@@ -34,18 +31,7 @@ public class MuoviPersona : MonoBehaviour
 
     void Start()
     {
-        GameObject moto = GameObject.Find("Moto");
-
-        if(moto != null)
-        {
-            agentScript = moto.GetComponent<MoveToGoalCalamityAgent>();
-        }
-
-        if(agentScript == null) 
-        {
-            Debug.Log("script non trovato");
-        }
-
+        
         GameObject[] planes = GameObject.FindGameObjectsWithTag("plane");
 
         if (planes.Length == 0)
@@ -84,26 +70,5 @@ public class MuoviPersona : MonoBehaviour
         start = new Vector3(transform.position.x, transform.position.y, planeBounds.min.z);
         end = new Vector3(transform.position.x, transform.position.y, planeBounds.max.z);
 
-        zSaved = transform.position.z;
-        InvokeRepeating("CheckPosition", 0f, 0.2f);
-    }
-
-    private void CheckPosition()
-    {
-        if(zSaved > transform.position.z)
-        {
-            if (agentScript != null) 
-            {
-                agentScript.SetCurveGoalReward(25f, 50f, 75f);
-            }
-        }
-        if(zSaved < transform.position.z)
-        {
-            if (agentScript != null) 
-            {
-                agentScript.SetCurveGoalReward(75f, 50f, 25f);
-            }
-        }
-        zSaved = transform.position.z;
     }
 }

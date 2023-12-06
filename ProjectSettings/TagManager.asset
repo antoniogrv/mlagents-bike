@@ -11,9 +11,6 @@ TagManager:
   - attraversato
   - plane
   - puddle
-  - mid-goal-curve
-  - mid-goal-curve-2
-  - mid-goal-curve-3
   layers:
   - Default
   - TransparentFX
