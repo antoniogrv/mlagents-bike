@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 using TMPro;
 using System;
 using System.Timers;
+using Random = UnityEngine.Random;
 
 public class MoveToGoalCalamityAgent : Agent
 {
@@ -22,6 +23,11 @@ public class MoveToGoalCalamityAgent : Agent
 
     public GameObject muroB;
     private List<GameObject> muroBchildren;
+
+    public GameObject holes;
+    private List<GameObject> holesChildren;
+    public GameObject holePrefab;
+    private List<GameObject> spawnedHoles;
 
     public int defaultTime = 11;
 
@@ -63,6 +69,60 @@ public class MoveToGoalCalamityAgent : Agent
         initChildPool(muroB, muroBchildren);
 
         colliderList = new List<Collider>();
+
+        spawnedHoles = new List<GameObject>();
+
+        holesChildren = new List<GameObject>();
+        initHolesPool(holes, holesChildren);
+
+        foreach (GameObject plane in holesChildren) {
+            Debug.Log(plane + " è nella lista!");
+        }
+
+        //Codice per spawnare i muri
+        holeAction("spawn");
+        foreach (GameObject hole in spawnedHoles)
+        {
+            Debug.Log(hole + " è stato spawnato!");
+        }
+    }
+
+    void holeAction(string action)
+    {
+        for (int i = 0; i < holesChildren.Count; i++)
+        {
+            GameObject plane = holesChildren[i];
+
+            Renderer planeRenderer = plane.GetComponent<Renderer>();
+            Vector3 planeMin = planeRenderer.bounds.min;
+            Vector3 planeMax = planeRenderer.bounds.max;
+
+            float randomX = Random.Range(planeMin.x, planeMax.x);
+            float randomZ = Random.Range(planeMin.z, planeMax.z);
+
+            Vector3 spawnPosition = new Vector3(randomX, 0.09f, randomZ);
+
+            if (action.Equals("spawn"))
+            {
+                GameObject spawnedHole = Instantiate(holePrefab, spawnPosition, Quaternion.identity, plane.transform);
+                spawnedHoles.Add(spawnedHole);
+            } else if (action.Equals("move"))
+            {
+                spawnedHoles[i].transform.position = spawnPosition;
+            }
+        }
+    }
+
+    void initHolesPool(GameObject go, List<GameObject> array) 
+    {
+        Transform parentTransform = go.transform;
+
+        for (int i = 0; i < parentTransform.childCount; i++)
+        {
+            Transform childTransform = parentTransform.GetChild(i);
+            GameObject childGameObject = childTransform.gameObject;
+            array.Add(childGameObject);
+        }
     }
 
     void initChildPool(GameObject muro, List<GameObject> array)
@@ -113,6 +173,11 @@ public class MoveToGoalCalamityAgent : Agent
 
     public override void OnEpisodeBegin()
     {
+
+        //Servirà una funzione per spostare i fossi
+        holeAction("move");
+
+
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
         fossiCounter = 0;
         transform.localPosition = new Vector3(0, 0.17f, 0);
