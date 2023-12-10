@@ -31,7 +31,8 @@ public class MoveToGoalCalamityAgent : Agent
 
     public int defaultTime = 11;
 
-    private Boolean reversed = false;
+    private Boolean onPuddle = false;
+    public float puddleDifficulty = 2.0f;
 
     private List<Collider> colliderList;
 
@@ -104,7 +105,8 @@ public class MoveToGoalCalamityAgent : Agent
 
             if (action.Equals("spawn"))
             {
-                GameObject spawnedHole = Instantiate(holePrefab, spawnPosition, Quaternion.identity, plane.transform);
+                GameObject spawnedHole = Instantiate(holePrefab, spawnPosition, Quaternion.identity, null);
+                spawnedHole.transform.SetParent(plane.transform);
                 spawnedHoles.Add(spawnedHole);
             } else if (action.Equals("move"))
             {
@@ -177,6 +179,17 @@ public class MoveToGoalCalamityAgent : Agent
         //Servirà una funzione per spostare i fossi
         holeAction("move");
 
+        foreach (GameObject hole in spawnedHoles)
+        {
+            Renderer holeRenderer = hole.GetComponent<Renderer>();
+
+            if (holeRenderer != null)
+            {
+                // Change the material color to red
+                holeRenderer.material.color = Color.black;
+            }
+        }
+
 
         // Ripristina la trasformazione dell'oggetto alla trasformazione originale
         fossiCounter = 0;
@@ -205,6 +218,14 @@ public class MoveToGoalCalamityAgent : Agent
         }
     }
 
+    /*
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        sensor.AddObservation(speed);
+        sensor.AddObservation(onPuddle);
+    }
+    */
+
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
         int action = actionBuffers.DiscreteActions[0];
@@ -229,6 +250,8 @@ public class MoveToGoalCalamityAgent : Agent
                 // Nessuna sterzata
                 Vector3 direction = transform.forward;
                 float s = speed * Time.deltaTime;
+                if (onPuddle)
+                    s *= puddleDifficulty;
                 transform.Translate(direction * s, Space.World);
                 break;
 
@@ -252,9 +275,9 @@ public class MoveToGoalCalamityAgent : Agent
     {
         currentRotation = steerAmount * Time.deltaTime * 100;
         
-        if (reversed)
+        if (onPuddle)
         {
-            currentRotation *= -1f;
+            currentRotation *= puddleDifficulty;
         }
 
         transform.Rotate(0, currentRotation, 0);
@@ -304,7 +327,7 @@ public class MoveToGoalCalamityAgent : Agent
     public void OnTriggerEnter(Collider coll) {
         if (coll.gameObject.CompareTag("puddle"))
         {
-            reversed = true;
+            onPuddle = true;
         }
         if (coll.gameObject.CompareTag("fosso"))
         {
@@ -320,6 +343,16 @@ public class MoveToGoalCalamityAgent : Agent
             else 
             {
                 AddReward(fossoReward);
+                foreach (GameObject hole in spawnedHoles)
+                {
+                    Renderer holeRenderer = hole.GetComponent<Renderer>();
+
+                    if (holeRenderer != null)
+                    {
+                        // Change the material color to red
+                        holeRenderer.material.color = Color.red;
+                    }
+                }
             }
             
         }
@@ -351,7 +384,7 @@ public class MoveToGoalCalamityAgent : Agent
     {
         if (other.gameObject.CompareTag("puddle"))
         {
-            reversed = false;
+            onPuddle = false;
         }
 
         if (other.CompareTag("mid-goal"))
