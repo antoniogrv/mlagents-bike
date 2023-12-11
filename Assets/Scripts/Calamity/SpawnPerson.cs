@@ -11,6 +11,8 @@ public class SpawnPerson : MonoBehaviour
     [SerializeField] private GameObject plane1;
     [SerializeField] private GameObject plane2;
     [SerializeField] private GameObject objectToSpawn;
+    [SerializeField] private GameObject cylinderPrefab;
+    [SerializeField] private Material transparentMaterial;
 
 
     void Start()
@@ -45,6 +47,10 @@ public class SpawnPerson : MonoBehaviour
         Vector3 spawnPosition = new Vector3(randomX, spawnY, randomZ);
         Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 0f);
 
+
+
+        
+
         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
         // Check if MuoviPersona script is already attached, if not, attach it
         MuoviPersona muoviPersonaScript = spawnedObject.GetComponent<MuoviPersona>();
@@ -64,6 +70,56 @@ public class SpawnPerson : MonoBehaviour
         // Ad esempio, puoi spostare il collider in alto di 0.5 unità rispetto al centro dell'oggetto
         boxCollider.center = new Vector3(0f, 1f, 0f);
         //Debug.Log("Aggiunto!");
+
+        //QUI VA AGGIUNTO L'UNICORNO
+
+        GameObject cylinder = Instantiate(cylinderPrefab);
+        cylinder.tag = "cylinder";
+
+        CapsuleCollider capsuleCollider = cylinder.GetComponent<CapsuleCollider>();
+
+        if (capsuleCollider != null)
+        {
+            // Utilizza Destroy se stai lavorando in modalità di gioco
+            // Se stai lavorando in modalità editor, usa DestroyImmediate
+            if (Application.isPlaying)
+            {
+                Destroy(capsuleCollider);
+            }
+            else
+            {
+                DestroyImmediate(capsuleCollider);
+            }
+        }
+
+        // Ottieni il riferimento al componente Renderer del GameObject
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+
+        if (meshRenderer != null && transparentMaterial != null)
+        {
+            // Assegna il nuovo materiale al MeshRenderer del GameObject
+            meshRenderer.material = transparentMaterial;
+        }
+        else
+        {
+            Debug.LogError("MeshRenderer o materiale non trovati.");
+        }
+
+        // Imposta la posizione e la rotazione del cilindro
+        cylinder.transform.position = spawnPosition + new Vector3(0, 2.15f, 3.3f); // Alza la coordinata Y di 2 unità
+        cylinder.transform.rotation = Quaternion.Euler(90, 0, 0);
+
+        // Imposta le dimensioni del cilindro
+        cylinder.transform.localScale = new Vector3(0.2f, 3.3f, 0.2f);
+
+        BoxCollider cylinderCollider = cylinder.AddComponent<BoxCollider>();
+
+        MuoviCilindro muoviCilindroScript = cylinder.GetComponent<MuoviCilindro>();
+        if (muoviCilindroScript == null)
+        {
+            muoviCilindroScript = cylinder.AddComponent<MuoviCilindro>();
+        }
+        
     }
 
     IEnumerator CasualWaiting(GameObject plane)

@@ -67,7 +67,9 @@ public class MoveToGoalCalamityAgent : Agent
         muroBchildren = new List<GameObject>();
 
         initChildPool(muroA, muroAchildren);
+        Debug.Log("muroAChildren possiede num elementi pari a " + muroAchildren.Count);
         initChildPool(muroB, muroBchildren);
+        Debug.Log("muroBChildren possiede num elementi pari a " + muroAchildren.Count);
 
         colliderList = new List<Collider>();
 
@@ -86,6 +88,7 @@ public class MoveToGoalCalamityAgent : Agent
         {
             Debug.Log(hole + " è stato spawnato!");
         }
+        Debug.Log("spawnedHoles contiene num elementi pari a " + spawnedHoles.Count);
     }
 
     void holeAction(string action)
@@ -129,13 +132,12 @@ public class MoveToGoalCalamityAgent : Agent
 
     void initChildPool(GameObject muro, List<GameObject> array)
     {
-        Transform parentTransform = gameObject.transform;
+        Transform parentTransform = muro.transform;
 
         for (int i = 0; i < parentTransform.childCount; i++)
         {
             Transform childTransform = parentTransform.GetChild(i);
             GameObject childGameObject = childTransform.gameObject;
-
             array.Add(childGameObject);
         }
     }

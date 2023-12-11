@@ -10,7 +10,9 @@ using Vector3 = UnityEngine.Vector3;
 public class MuoviPersona : MonoBehaviour
 {
     public float speed = 1.25f;
+    public float cylinderSpeed = 1.25f;
     public GameObject nearestPlane;
+    public GameObject nearestCylinder;
 
     private float direction = -1.0f;
     private bool hasReversed = false;
@@ -23,11 +25,19 @@ public class MuoviPersona : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.back * direction * speed * Time.deltaTime);
+        nearestCylinder.transform.Translate(Vector3.down * direction * cylinderSpeed * Time.deltaTime);
 
         if ((transform.position.z < start.z && hasReversed) || (transform.position.z > end.z && !hasReversed))
         {
             hasReversed = !hasReversed;
             transform.rotation *= Quaternion.Euler(0, 180, 0);
+            //Debug.Log("LA PERSONA SI E' FERMATA A :" + transform.position.z);
+            if (hasReversed)
+                nearestCylinder.transform.position = new Vector3(transform.position.x, nearestCylinder.transform.position.y, transform.position.z - (end.z - start.z) + 2.15f);
+            else
+                nearestCylinder.transform.position = new Vector3(transform.position.x, nearestCylinder.transform.position.y, transform.position.z + (end.z - start.z) - 2.15f);
+            cylinderSpeed *= -1.0f;
+
         }
     }
 
@@ -87,7 +97,35 @@ public class MuoviPersona : MonoBehaviour
         start = new Vector3(transform.position.x, transform.position.y, planeBounds.min.z);
         end = new Vector3(transform.position.x, transform.position.y, planeBounds.max.z);
 
+        GameObject[] cylinders = GameObject.FindGameObjectsWithTag("cylinder");
+
+        if (cylinders.Length == 0)
+        {
+            return;
+        }
+
+        float closestDistanceCylinder = Mathf.Infinity;
+
+        foreach (GameObject cylinder in cylinders)
+        {
+            float distance = Vector3.Distance(transform.position, cylinder.transform.position);
+
+            if (distance < closestDistanceCylinder)
+            {
+                closestDistanceCylinder = distance;
+                nearestCylinder = cylinder;
+            }
+        }
+        if (nearestCylinder == null)
+        {
+            return;
+        }
+
+        transform.SetParent(nearestPlane.transform);
+        nearestCylinder.transform.SetParent(nearestPlane.transform);
+
     }
+    /*
 
     private void OnTriggerEnter(Collider other)
     {
@@ -110,4 +148,5 @@ public class MuoviPersona : MonoBehaviour
             otherTransform.position.z
         );
     }
+    */
 }
