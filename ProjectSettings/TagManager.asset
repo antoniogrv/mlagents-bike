@@ -16,6 +16,7 @@ TagManager:
   - mid-goal-b
   - muro-a
   - muro-b
+  - cylinder
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,6 @@ public class SpawnPerson : MonoBehaviour
     [SerializeField] private GameObject plane2;
     [SerializeField] private GameObject objectToSpawn;
     [SerializeField] private GameObject cylinderPrefab;
-    [SerializeField] private Material transparentMaterial;
 
 
     void Start()
@@ -90,19 +89,6 @@ public class SpawnPerson : MonoBehaviour
             {
                 DestroyImmediate(capsuleCollider);
             }
-        }
-
-        // Ottieni il riferimento al componente Renderer del GameObject
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-
-        if (meshRenderer != null && transparentMaterial != null)
-        {
-            // Assegna il nuovo materiale al MeshRenderer del GameObject
-            meshRenderer.material = transparentMaterial;
-        }
-        else
-        {
-            Debug.LogError("MeshRenderer o materiale non trovati.");
         }
 
         // Imposta la posizione e la rotazione del cilindro

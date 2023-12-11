@@ -67,9 +67,9 @@ public class MoveToGoalCalamityAgent : Agent
         muroBchildren = new List<GameObject>();
 
         initChildPool(muroA, muroAchildren);
-        Debug.Log("muroAChildren possiede num elementi pari a " + muroAchildren.Count);
+        //Debug.Log("muroAChildren possiede num elementi pari a " + muroAchildren.Count);
         initChildPool(muroB, muroBchildren);
-        Debug.Log("muroBChildren possiede num elementi pari a " + muroAchildren.Count);
+        //Debug.Log("muroBChildren possiede num elementi pari a " + muroAchildren.Count);
 
         colliderList = new List<Collider>();
 
@@ -78,17 +78,8 @@ public class MoveToGoalCalamityAgent : Agent
         holesChildren = new List<GameObject>();
         initHolesPool(holes, holesChildren);
 
-        foreach (GameObject plane in holesChildren) {
-            Debug.Log(plane + " è nella lista!");
-        }
-
         //Codice per spawnare i muri
         holeAction("spawn");
-        foreach (GameObject hole in spawnedHoles)
-        {
-            Debug.Log(hole + " è stato spawnato!");
-        }
-        Debug.Log("spawnedHoles contiene num elementi pari a " + spawnedHoles.Count);
     }
 
     void holeAction(string action)
@@ -149,7 +140,7 @@ public class MoveToGoalCalamityAgent : Agent
             obj.tag = tag;
         }
 
-        Debug.Log("Settato il tag " + tag + " ad un certo pool di oggetti");
+        //Debug.Log("Settato il tag " + tag + " ad un certo pool di oggetti");
     }
 
     public int GetTimer() {
@@ -335,7 +326,7 @@ public class MoveToGoalCalamityAgent : Agent
         {
             fossiCounter = ++fossiCounter;
 
-            Debug.Log("Numero di fossi colpiti: " + fossiCounter);
+            //Debug.Log("Numero di fossi colpiti: " + fossiCounter);
 
             if(fossiCounter >= MAX_FOSSI) 
             {
