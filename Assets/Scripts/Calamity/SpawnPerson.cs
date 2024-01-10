@@ -38,7 +38,7 @@ public class SpawnPerson : MonoBehaviour
 
         Bounds planeBounds = planeRenderer.bounds;
 
-        float randomX = UnityEngine.Random.Range(planeBounds.min.x, planeBounds.max.x);
+        float randomX = (planeBounds.min.x + planeBounds.max.x) / 2f;
         float randomZ = UnityEngine.Random.Range(planeBounds.min.z, planeBounds.max.z);
 
         float spawnY = plane.transform.position.y;

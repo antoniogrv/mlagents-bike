@@ -18,6 +18,10 @@ public class MoveToGoalCalamityAgent : Agent
     [SerializeField] private GameObject flag;
     [SerializeField] private GameObject groundedFlag;
 
+    [SerializeField] public GameObject infoPlane;
+    [SerializeField] public TMP_Text successAmount;
+    [SerializeField] public TMP_Text failAmount;
+
     public GameObject muroA;
     private List<GameObject> muroAchildren;
 
@@ -80,6 +84,20 @@ public class MoveToGoalCalamityAgent : Agent
 
         //Codice per spawnare i muri
         holeAction("spawn");
+    }
+
+    void increaseFail()
+    {
+        int fails = Int32.Parse(failAmount.text);
+        ++fails;
+        failAmount.text = fails.ToString();
+    }
+
+    void increaseSuccess()
+    {
+        int success = Int32.Parse(successAmount.text);
+        ++success;
+        successAmount.text = success.ToString();
     }
 
     void holeAction(string action)
@@ -163,6 +181,7 @@ public class MoveToGoalCalamityAgent : Agent
         flag.GetComponent<Renderer>().material = red;
         groundedFlag.GetComponent<Renderer>().material = red;
 
+        increaseFail();
         EndEpisode();
     }
 
@@ -206,6 +225,7 @@ public class MoveToGoalCalamityAgent : Agent
     public void FixedUpdate() {
         if (transform.position.y < fallThreshold)
         {
+            increaseFail();
             EndEpisode();
             StopCoroutine("TickTimer");
         }
@@ -313,6 +333,7 @@ public class MoveToGoalCalamityAgent : Agent
             flag.GetComponent<Renderer>().material = red;
             groundedFlag.GetComponent<Renderer>().material = red;
             StopCoroutine("TickTimer");
+            increaseFail();
             EndEpisode();
         }
     }
@@ -331,6 +352,7 @@ public class MoveToGoalCalamityAgent : Agent
             if(fossiCounter >= MAX_FOSSI) 
             {
                 AddReward(maxFossiReward);
+                increaseFail();
                 EndEpisode();
             } 
             else 
@@ -355,6 +377,7 @@ public class MoveToGoalCalamityAgent : Agent
             flag.GetComponent<Renderer>().material = green;
             groundedFlag.GetComponent<Renderer>().material = green;
             StopCoroutine("TickTimer");
+            increaseSuccess();
             EndEpisode();
         }
         if (coll.CompareTag("attraversato"))
@@ -362,6 +385,7 @@ public class MoveToGoalCalamityAgent : Agent
 
             AddReward(returnBackReward);
             StopCoroutine("TickTimer");
+            increaseFail();
             EndEpisode();
         }
         if (coll.CompareTag("mid-goal")) 
